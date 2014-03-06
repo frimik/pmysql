@@ -1,6 +1,3 @@
-README
-This is a fork ok pmysql from mysqlatfacebook, created by Domas Mituzas.
-This fork adds extra functionality for database servers which run multiple instances of MySQL/MariaDB defined by their port number.
 
 
 ORIGINAL README
