@@ -1,4 +1,4 @@
-CXXFLAGS+=-Wall -Werror -g -O3 `mysql_config --cflags` `pkg-config glib-2.0 gthread-2.0 --cflags`
+CXXFLAGS+=-Wall -Werror -Wno-deprecated-declarations -g -O3 `mysql_config --cflags` `pkg-config glib-2.0 gthread-2.0 --cflags`
 LDFLAGS+=`mysql_config --libs_r` `pkg-config glib-2.0 gthread-2.0 --libs`
 
 all: pmysql

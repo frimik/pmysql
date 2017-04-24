@@ -19,11 +19,9 @@ pmysql allows broadcasting a query to a large set of servers and read results fr
 %setup -q
 
 %build
-cd pmysql
 env CXXFLAGS='-DMETADB=\"localinfo\"' make %{?_smp_mflags}
 
 %install
-cd pmysql
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
